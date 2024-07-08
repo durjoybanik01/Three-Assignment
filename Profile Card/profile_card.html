@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background:url(background.jpg);
+   background-color: cover;
+   background-position: center;
+}
+
+
+.profile-card{
+    position: relative;
+    width: 400px;
+    height: 555px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding:20px;
+    color:rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+
+
+.profile-image img{
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:100px;
+    border: 10px solid #fff;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile-image img:hover{
+    transform: scale(1.1);
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+
+.occupation{
+    font-size:22px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.description{
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 0px 15px 0px;
+}
+
+.contact-info{
+    text-align: center;
+    margin-top: -9px;
+}
+
+
+.email{
+    background: linear-gradient(135deg,#6a11cb,#2575fc 100%);
+    color:#fff;
+    border: none;
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+}
+
+.email img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+    margin-right:10px; 
+}
+
+.email:hover{
+    transform: scale(1.1);
+    color: greenyellow;
+}
+
+.phone{
+    background: linear-gradient(135deg,#6a11cb,#2575fc 100%);
+    color:#fff;
+    border: none;
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size:13px;
+    margin: 5px 0px 5px 0px;
+
+}
+.phone img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+    margin-right:10px; 
+}
+
+.phone:hover{
+    transform: scale(1.1);
+    color: greenyellow;
+}
+
+span{
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+          <div class="profile-image">
+                <img src="profile.jpg" alt="Profile Picture">
+           </div>
+           <div class="profile-info">
+             <h1 class="name">Durjoy Banik</h1>
+             <p class="occupation">Web Developer</p>
+             <p class="description">Passionate web developer with experience in creating dynamic websites and applications.
+                 Always eager to learn new technologies and improve my skills.
+                </p>
+          </div>
+          <div class="contact-info">
+            <p>Contact Info.</p>
+            <button class="email"><img src="mail.png" alt="Email">durjoybanik2018@gmail.com <span> &#8594;</span></button>
+            <button class="phone"><img src="phone.png" alt="Phone">+8801931099780 <span> &#8594;</span></button>
+          </div>
+
+    </div>
+</body>
+</html>
